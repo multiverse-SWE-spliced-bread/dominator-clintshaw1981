@@ -18,9 +18,20 @@ let result = txt.toUpperCase()
 document.getElementById('patrick').innerHTML = result;
 }
 
-/*const btn3 = document.getElementById('sarc-btn')
-btn1.addEventListener('click', alt)  
-*/
+const btn2 = document.getElementById('sarc-btn')
+btn2.addEventListener('click', alt)  
+
+function alt() {
+    let text = document.getElementById('patrick').innerHTML.toLowerCase()
+
+    strArray = text.split('') 
+    for (i = 1; i <= strArray.length; i += 2) {
+        strArray[i] = strArray[i].toUpperCase();
+    }
+    result = strArray.join('')
+    document.getElementById('patrick').innerHTML = result;
+}
+
 
 
 
